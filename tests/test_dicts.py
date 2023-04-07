@@ -15,3 +15,8 @@ def test_get_val(data):
     assert get_val(data, "vss", "bazaar") == 'bazaar'
     assert get_val({}, "vcs", "git") == 'git'
     assert get_val({}, "vcs", "bazaar") == 'bazaar'
+
+
+def error_type(data):
+    assert get_val(2, "vcs", "git") == 'git'
+

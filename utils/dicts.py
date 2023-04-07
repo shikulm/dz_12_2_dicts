@@ -5,7 +5,12 @@ default
     :param collection: словарь
     :param key:  ключ
     :param default: значение по умолчанию
-    :return: 
+    :return:
     """
-    pass
+    # Проверка, что первый параметр - словарь
+    if isinstance(collection, dict):
+        if key in collection.keys():
+            return collection[key]
+
+    return default
 
